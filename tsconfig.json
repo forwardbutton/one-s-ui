@@ -20,6 +20,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  "baseUrl": ".",
+  "paths": {
+    "@/*": ["lib/*"],
+    "@/common/*": ["lib/common/*"],
+    "@/styles/*": ["lib/common/styles/*"],
+    "@/components/*": ["lib/components/*"]
+  },
   "include": ["src", "lib/components", "lib/types"],
   "exclude": ["node_modules"]
 }

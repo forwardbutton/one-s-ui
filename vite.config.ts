@@ -39,5 +39,12 @@ export default defineConfig({
     dts({ include: ['lib'] }),
     cssInjectedByJsPlugin()
   ],
+  resolve: {
+    alias: [
+      { find: '@/', replacement: resolve(__dirname, 'lib')},
+      { find: '@/styles', replacement: resolve(__dirname, 'lib/common/styles')},
+      { find: '@/components', replacement: resolve(__dirname, 'lib/components')}
+    ]
+  }
 });
 
